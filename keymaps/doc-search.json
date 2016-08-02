@@ -1,5 +1,6 @@
 {
-  "atom-workspace": {
-    "ctrl-f1": "doc-search:php"
+  "atom-text-editor": {
+    "ctrl-f1": "doc-search:php",
+    "ctrl-f2": "doc-search:python"
   }
 }

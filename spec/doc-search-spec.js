@@ -37,7 +37,7 @@ describe('DocSearch', () => {
 
         let docSearchPanel = atom.workspace.panelForItem(docSearchElement);
         expect(docSearchPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'doc-search:toggle');
+        atom.commands.dispatch(workspaceElement, 'doc-search:php');
         expect(docSearchPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('DocSearch', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'doc-search:toggle');
+      atom.commands.dispatch(workspaceElement, 'doc-search:php');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('DocSearch', () => {
         // Now we can test for view visibility
         let docSearchElement = workspaceElement.querySelector('.doc-search');
         expect(docSearchElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'doc-search:toggle');
+        atom.commands.dispatch(workspaceElement, 'doc-search:php');
         expect(docSearchElement).not.toBeVisible();
       });
     });

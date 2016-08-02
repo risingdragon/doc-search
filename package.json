@@ -6,7 +6,7 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "doc-search:php"
+    "atom-workspace": ["doc-search:php", "doc-search:python"]
   },
   "repository": "https://github.com/risingdragon/doc-search",
   "license": "MIT",

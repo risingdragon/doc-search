@@ -17,6 +17,10 @@
             {
               "label": "PHP",
               "command": "doc-search:php"
+            },
+            {
+              "label": "Python",
+              "command": "doc-search:python"
             }
           ]
         }
