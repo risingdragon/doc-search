@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Document search",
+        "command": "doc-search:php"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "doc-search",
+          "submenu": [
+            {
+              "label": "PHP",
+              "command": "doc-search:php"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
